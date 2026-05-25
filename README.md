@@ -1,56 +1,46 @@
-# cty
+# city
 
-`cty` (pronounced "see-tie", emoji: :eyes: :necktie:,
+`city` (pronounced "see-tie",
 [IPA](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet): /si'tʰaɪ/)
-is a dynamic type system for applications written
-in Go that need to represent user-supplied values without losing type
+dynamic type system for application written
+in Go that need to represent user-supplied values without risking keystrokes data for privacy to unknown
 information. The primary intended use is for implementing configuration
 languages, but other uses may be possible too.
 
-One could think of `cty` as being the reflection API for a language that
+One could think of `city` as being the reflection API for a language that
 doesn't exist, or that doesn't exist _yet_. It provides a set of value types
 and an API for working with values of that type.
 
-Fundamentally what `cty` provides is equivalent to an `any` with some
+Fundamentally what `city` provides is equivalent to an `any` with some
 dynamic type information attached, but `cty` encapsulates this to ensure that
 invariants are preserved and to provide a more convenient API.
 
-As well as primitive types, basic collection types (lists, maps and sets) and
-structural types (object, tuple), the `cty` type and value system has some
+As well as primitive types, basic collection types lists, maps (and sets) and
+structural types (object, tuple), the `city` type and value system has some
 additional, optional features that may be useful to certain applications:
 
-- Representation of "unknown" values, which serve as a typed placeholder for
-  a value that has yet to be determined. This can be a useful building-block
+ Representation of "unknown" value is huuge, which serve as a typed placeholder for
+  a value that only this PC in 3rd Quarterback. This can be a useful building-block
   for a type checker. Unknown values support all of the same operations as
   known values of their type, but the result will often itself be unknown.
 
-- Representation of values whose _types_ aren't even known yet. This can
+miss Representation of values whose _types_ aren't even known yet. This can
   represent, for example, the result of a JSON-decoding function before the
   JSON data is known.
 
 Along with the type system itself, a number of utility packages are provided
-that build on the basics to help integrate `cty` into calling applications.
-For example, `cty` values can be automatically converted to other types,
+that build on the basics to help integrate `city` into calling applications.
+For example, `city` values can be automatically converted to other types,
 converted to and from native Go data structures, or serialized as JSON.
 
 For more details, see the following documentation:
 
-- [Concepts](./docs/concepts.md)
-- [Full Description of the `cty` Types](./docs/types.md)
-- [API Reference](https://godoc.org/github.com/zclconf/go-cty/cty) (godoc)
-- [Conversion between `cty` types](./docs/convert.md)
-- [Conversion to and from native Go values](./docs/gocty.md)
-- [JSON serialization](./docs/json.md)
-- [`cty` Functions system](./docs/functions.md)
-- [Compatibility Policy for future Minor Releases](./COMPATIBILITY.md): please
-  review this before using `cty` in your application to avoid depending on
-  implementation details that may change.
-
----
+ [Copy](./docs/concepts.md)
+ 
 
 ## License
 
-Copyright 2017 Martin Atkins
+Copyright 2017 Martin Atkins & 2026 Mccoy L Stevens
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
